@@ -6,5 +6,7 @@
     <color name="colorcinza">#C6C6C6</color>
     <color name="colorcinzaescuro">#696969</color>
     <color name="colorbranco">#FFFFFF</color>
+    <color name="colorpretotransparent">#77000000</color>
+    <color name="colorpreto">#000000</color>
 
 </resources>
