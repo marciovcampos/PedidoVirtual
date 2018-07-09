@@ -102,11 +102,11 @@ public class EstabelecimentoActivity extends AppCompatActivity {
         mesa = realm.where(Mesa.class).equalTo("idQRCode", getIntent().getIntExtra("qrcode", 0)).findFirst();
 
         if (mesa != null) {
-            estabelecimento = realm.where(Estabelecimento.class).equalTo("idEstabelecimento", mesa.getIdEstabelecimento()).findFirst();
-        } else {
-            Toast.makeText(this, R.string.erro_carregar_estabelecimento, Toast.LENGTH_LONG).show();
-        }
+        estabelecimento = realm.where(Estabelecimento.class).equalTo("idEstabelecimento", mesa.getIdEstabelecimento()).findFirst();
+    } else {
+        Toast.makeText(this, R.string.erro_carregar_estabelecimento, Toast.LENGTH_LONG).show();
     }
+}
 
     public Estabelecimento getEstabelecimento() {
         return estabelecimento;
